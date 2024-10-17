@@ -1,0 +1,434 @@
+/*page reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-font: "Aeonik-Regular", sans-serif;
+    --secondary-font: "Gotham-Bold", sans-serif;
+    --primary-color: #8e59ff;
+    --text-color:gray;
+    --grid-color: #f9e9de;
+    --teritory-color: #f2c6de;
+  }
+/*fixed icon style*/
+.whatsapp a{
+    position: fixed;
+    color:green;
+    font-size: 50px;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.whatsapp a:hover{
+    transform: scale(1.1);
+}
+/*body set*/
+body{
+    /* margin: 20px; */
+}
+  /*HEADER STYLE*/
+header{
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    width: 100%;
+}
+.home{
+    margin:0  20px 0 20px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--secondary-font);
+    border: 2px solid white;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0 0 5px rgb(40, 39, 39);
+ }
+ .head li{
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-left: 20px;
+ }
+ .head nav ul li a{
+    background-color: white;
+    font: var(--secondary-font);
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.head nav ul li a:hover{
+    color: var(--primary-color);
+}
+.head nav ul li a:active{
+    color: var(--primary-color);
+}
+ .number{
+    position: relative;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+    width: 170px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow:0, 0, 35px #cbf4fa;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: var(--secondary-font)
+}
+.number:hover{
+    color: var(--primary-color);
+    background-color: white;
+    border: 2px solid var(--primary-color);
+}
+.head .icon{
+    cursor: pointer;
+}
+
+/* HOME SECTION STYLE*/
+.home h1{
+    width: 50%;
+    font: var(--primary-font);
+    font-size:50px;
+    padding-top: 200px;
+}
+.home h1 strong{
+    color: var(--primary-color);
+}
+.home p{
+    width: 50%;
+    margin: 20px 0;
+    font-size: 20px; 
+    color: var(--text-color);
+    font-family: var(--secondary-font)
+}
+.home button{
+    background-color:var(--primary-color);
+    color: white;
+    width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--secondary-font)
+}
+.home button:hover{
+    background-color: white;
+    color:var(--primary-color);
+    border: 2px solid var(--primary-color);
+    font-family: var(--secondary-font)
+}
+.partner .para{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-family: var(--secondary-font)
+}
+.partner .img{
+    align-items: center;
+    padding: 40px;
+}
+
+
+/*ABOUT US*/
+.aboutus{
+    margin: 150px 20px;
+}
+.aboutus h2{
+    color: var(--primary-color);
+    font: var(--primary-font);
+    font-size: 40px;
+}
+.aboutus div{
+    width: 50%;
+    margin-top: 20px;
+}
+.aboutus div h1{
+    font: var(--primary-font);
+    font-size: 50px;
+    width: 75%;
+}
+.aboutus .block p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: var(--secondary-font)
+    
+}
+.aboutus div button{
+    margin: 20px;
+    width: 100px;
+    height: 35px;
+    color: whitesmoke;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.aboutus div button:hover{
+    border: 2px solid var(--primary-color);
+    background-color:white;
+    color: var(--primary-color);
+}
+.image{
+    float: left;
+}
+/*our team*/
+.section4{
+    margin: 20px;
+}
+.ourteam h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-family: var(--primary-font);
+}
+.ourteam{
+    float: left;
+}
+.ourteam{
+    width: 50%;
+}
+.subtitle{
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    padding-right: 100px;
+    padding-top: 200px;
+}
+.subtitle .para1{
+    color: var(--text-color);
+    margin-bottom: 20rem; ;
+}
+.ourprojects {
+    position: absolute; 
+}
+.ourprojects h1{
+    font-size: 40px;
+    font-family: var(--secondary-font);
+}
+.ourprojects h1{
+    float: left;
+}
+.service_head{
+    text-align: center;
+    line-height: 50px;
+    font-family: var(--secondary-font);
+}
+.service_head .service_h3{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+.service_head .service_h1{
+    font-size: 40px;
+}
+.service_head .service_p{
+    line-height:30px ;
+}
+/*grid*/
+.container{
+    display: grid;
+    margin:150px;
+    grid-template-columns:350px 350px 350px;
+    grid-template-rows: 350px 350px;
+    gap: 3em;
+    font-family: var(--secondary-font);
+    
+}
+.container .box{
+    border-radius: 8px;
+    padding: 25px;
+    background-color:#FBDCE2;
+    transition: 0.2s;
+}
+.container .box:hover{
+    background-color:var(--primary-color);
+    transform: scale(1.1);
+}
+.container .box p{
+    color:rgb(45, 53, 47);
+}
+.material-symbols-outlined{
+    color: var(--primary-color);
+}
+.service .box .material-symbols-outlined{
+    font-size: 35px;
+}
+.arrow .material-symbols-outlined{
+    color:white;
+    background-color: black;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* brand we worked */
+.brand-we-worked h1{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 40px;
+}
+.brand-we-worked .brand{
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+}
+.brand-we-worked .brand img{
+    margin: 0 20px 20px 20px;
+}
+/*
+.Worldwide h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: var(--secondary-font);
+}
+ .Worldwide div img{
+    display: block;
+    padding: 50px 100px;
+    color: #8e59ff;
+}
+.Worldwide .world-map{
+    background-image: url(https://harveedesigns.b-cdn.net/images/map.webp);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+.world-map .dot-one{
+    position: relative;
+    display: inline-block;
+    margin-top: 125px;
+}
+
+.world-map .dot-one span {
+    display: block;
+    background-size: cover;
+    background-image: url(https://harveedesigns.b-cdn.net/images/round1.webp);
+    width: 20px;
+    height: 20px;
+} */
+/*CONTACT US*/
+.contact h1 {
+    text-align: center;
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+    padding: 10px;
+}
+.contact h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--secondary-font);
+    padding: 10px;
+}
+.contact .image{
+    display: block;
+    padding-left: 40px;
+    display: flex;
+    float: left;
+}
+.contact .form{
+    font-size: 25px;
+    margin: 40px;
+    margin-left: 42%;
+    padding: 20px;
+}
+.contact .form input{
+    width: 700px;
+    height: 40px;
+    border-radius: 8px;
+}
+.contact .form input:hover{
+    border: 2px solid rgb(128, 207, 244);
+}
+.contact .form .form-group select{
+    width: 700px;
+    height: 40px;
+    border-radius: 8px;
+}
+.contact .form .form-group select:hover{
+    border: 2px solid rgb(128, 207, 244);
+}
+.contact .form #message{
+    width: 700px;
+    height: 100px;
+    border-radius: 8px;
+}
+.contact .form button{
+    font-size: 20px;
+    color: white;
+    background-color:orange;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+    border: none;
+}
+.contact .form button:hover{
+    transform: scale(1.1);
+}
+footer{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 60px;
+    font-family: var(--secondary-font);
+    columns: 2;
+    column-gap: 20px;
+}
+footer h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+    line-height: 40px;
+}
+footer p{
+    color: var(--text-color);
+    padding-top: 20px;
+}
+footer div .material-symbols-outlined{
+    display: flex;
+    float: left;
+}
+footer div{
+    padding: 20px 0;
+}
+footer .coloum img{
+    display: block;
+}
+footer .coloum input{
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid whitesmoke;
+}
+footer .coloum button{
+    display: inline;
+    color: white;
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+} 
+footer .coloum button:hover{
+    transform: scale(1.1);
+}
+footer .coloum .checkbox{
+    width: 20px;
+    height: 20px;
+}
+footer .coloum p{
+    display: inline;
+    text-decoration: underline;
+    cursor: pointer;
+}
